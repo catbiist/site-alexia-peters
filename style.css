@@ -1,0 +1,254 @@
+/* BASE STYLES */
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif; }
+body { background:hsl(0, 0%, 100%); color:#222; line-height:1.5; }
+.container { width:90%; max-width:1200px; margin:0 auto; }
+
+/* HEADER */
+header {
+  background: #2BCBB8;
+  color: #ff3ca6;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between; /* logo left, menu right */
+  align-items: center;
+  padding: 10px 40px;
+}
+
+/* LOGO */
+.logo img {
+  height: 60px;
+  width: auto;
+}
+
+.logo h1 {
+  font-weight: 900;
+  color: #ff3ca6;
+}
+
+.logo span {
+  color: #ff3ca6;
+}
+
+/* MENU */
+.menu ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px 0;
+  display: block;
+}
+
+.menu ul li a:hover {
+  color: #ff3ca6;
+  transition: color 0.3s ease;
+}
+
+/* Dropdown */
+.menu ul li.dropdown {
+  position: relative;
+}
+
+.menu ul li.dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #2BCBB8;
+  list-style: none;
+  padding: 0;
+  min-width: 150px;
+  border-radius: 5px;
+  z-index: 200;
+}
+
+.menu ul li.dropdown .dropdown-menu li a {
+  display: block;
+  padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.menu ul li.dropdown .dropdown-menu li a:hover {
+  background: #ff3ca6;
+  color: #fff;
+}
+
+/* Show dropdown on hover */
+.menu ul li.dropdown:hover .dropdown-menu {
+  display: block;
+   left: auto;        
+  right: 0;        
+
+}
+
+/* HAMBURGER  */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+}
+
+
+.hero {
+  height: 80vh;
+  background: #fffeec;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+   padding-top: 120px; 
+}
+
+.hero h2 {
+  font-size: 3rem;
+  color: #ff3ca6; /* pastel yellow */
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #0f4c4c; /* dark teal */
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #2BCBB8;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+  background: #fff89c; /* pastel yellow */
+  color: #ff3ca6;      /* light teal text */
+}
+
+
+
+
+.btn:hover {
+  background:#ff3ca6;      /* pastel yellow on hover */
+  color:#FFF9A6;           /* light teal text on hover */
+}
+.shop-section {
+  margin-top: 55px;
+  padding: 25px 30px;
+  border: 2px solid #ff3ca6;
+  border-radius: 20px;
+  background: #fbffd2;
+  display: inline-block;
+  
+}
+
+.shop-title {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #2BCBB8; /* light teal */
+  
+}
+
+.shop-btn {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px 25px;
+  background: #2BCBB8;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: 0.3s ease;
+}
+
+
+.shop-btn:hover {
+  background: #ff3ca6;
+  color: #fffde8;
+}
+
+
+#about {
+  padding: 100px 20px;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap; /* stacks on mobile */
+  text-align: left;
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ff3ca6;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  color: #0f4c4c;
+  line-height: 1.6;
+}
+
+.about-image img {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 50%; /* circular image */
+  
+}
+
+@media (max-width:768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-image img {
+    max-width: 200px;
+  }
+}
+
+
+
+
+/* FOOTER */
+footer { background:#EAF161; color:#DA63C2; text-align:center; padding:20px 0; margin-top:40px; }
+
+/* RESPONSIVE */
+@media(max-width:768px) {
+  .menu { display:none; }
+  .hamburger { display:flex; }
+}

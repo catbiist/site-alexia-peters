@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="portfolio-digital" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Digital</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fefefe;
+      color: #222;
+    }
+
+    header {
+      background: #2BCBB8;
+      padding: 20px;
+      color:#ff3ca6;           
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .item {
+      color:#FFF9A6;         
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .item img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .item h3 {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      color: #2BCBB8;
+    }
+
+    a.back {
+      display: block;
+      width: fit-content;
+      margin: 20px auto;
+      padding: 7px 15px;
+      background: #ff3ca6;
+      color: white;
+      color: 
+      border 5px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    a.back:hover {
+      background: #ff6fbd;
+    }
+  </style>
+</head>
+<body>
+  <header>Portfolio — Tradicional</header>
+
+  <a href="index.html" class="back">← Voltar ao Site</a>
+
+  <div class="gallery">
+    <div class="item">
+      <img src="butterfly_watercolor.jpg">
+    </div>
+
+    <div class="item">
+      <img src="avocado watercolor 2.pdf">
+   
+    </div>
+
+    <div class="item">
+      <img src="two faced beetles.jpg">
+    </div>
+
+    <div class="item">
+      <img src="rainbow_octopus_watercolor.jpg" >
+    </div>
+
+    <div class="item">
+      <img src="tomato watercolor .pdf">
+    </div>
+
+    <div class="item">
+      <img src="lagosta c fundo.pdf">
+    </div>
+
+  </div>
+</body>
+</html>

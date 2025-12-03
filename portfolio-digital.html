@@ -2,103 +2,240 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8" />
-  <meta name="portfolio-digital" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio Digital</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #fefefe;
-      color: #222;
-    }
 
-    header {
-      background: #2BCBB8;
-      padding: 20px;
-      color:#ff3ca6;           
-      text-align: center;
-      font-size: 1.8rem;
-      font-weight: bold;
-    }
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      padding: 40px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .item {
-      color:#FFF9A6;         
-      border-radius: 12px;
-      padding: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-
-    .item img {
-      width: 100%;
-      border-radius: 10px;
-      object-fit: cover;
-    }
-
-    .item h3 {
-      margin-top: 10px;
-      font-size: 1.2rem;
-      color: #2BCBB8;
-    }
-
-    a.back {
-      display: block;
-      width: fit-content;
-      margin: 20px auto;
-      padding: 7px 15px;
-      background: #ff3ca6;
-      color: white;
-      color: 
-      border 5px;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-
-    a.back:hover {
-      background: #ff6fbd;
-    }
-  </style>
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>Portfolio — Tradicional</header>
 
-  <a href="index.html" class="back">← Voltar ao Site</a>
+<!-- HEADER (same as home page) -->
+<header id="main-header">
+  <div class="header-inner">
 
-  <div class="gallery">
-    <div class="item">
-      <img src="butterfly_watercolor.jpg">
+    <div class="logo">
+      <img src="alexia.logo.png" alt="Logo">
     </div>
 
-    <div class="item">
-      <img src="avocado watercolor 2.pdf">
-   
-    </div>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Sobre</a></li>
 
-    <div class="item">
-      <img src="two faced beetles.jpg">
-    </div>
+        <li class="dropdown">
+          <a href="#">Portfolio</a>
+          <ul class="dropdown-menu">
+            <li><a href="portfolio-tradicional.html">Tradicional</a></li>
+            <li><a href="portfolio-digital.html">Digital</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Colaborações</a></li>
+          </ul>
+        </li>
 
-    <div class="item">
-      <img src="rainbow_octopus_watercolor.jpg" >
-    </div>
+        <li class="dropdown">
+          <a href="#">Serviços</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Ilustrações</a></li>
+            <li><a href="#">Stickers, Prints,...</a></li>
+            <li><a href="#">Desenho Tradicional</a></li>
+          </ul>
+        </li>
 
-    <div class="item">
-      <img src="tomato watercolor .pdf">
-    </div>
+        <li class="dropdown">
+          <a href="#">Favoritos</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Tradicional</a></li>
+            <li><a href="#">Digital</a></li>
+          </ul>
+        </li>
 
-    <div class="item">
-      <img src="lagosta c fundo.pdf">
+        <li class="dropdown">
+          <a href="#">Contactos</a>
+          <ul class="dropdown-menu contactos-menu">
+            <li><a href="#">E-Mail</a></li>
+            <li><a href="#">Google Forms</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Hamburger for mobile -->
+    <div class="hamburger">
+      <span></span><span></span><span></span>
     </div>
 
   </div>
+</header>
+
+<!-- GALLERY CONTENT -->
+<div class="gallery-portfolio">
+  <div class="item">
+    <img src="goldfish.jpg">
+  </div>
+
+  <div class="item">
+    <img src="koi-fish.jpg">
+  </div>
+
+  <div class="item">
+    <img src="moodeng.jpg">
+  </div>
+
+  <div class="item">
+    <img src="nao-arrisk.jpg">
+  </div>
+
+  <div class="item">
+    <img src="moth.jpg">
+  </div>
+
+  <div class="item">
+    <img src="BRIEFING3_LI_NILEY_CAPA FINAL.jpg">
+  </div>
+
+  <div class="item">
+    <img src="first beetle.jpg">
+  </div>
+
+  <div class="item">
+    <img src="second beetle.jpg">
+  </div>
+
+  <div class="item">
+    <img src="first beetle.jpg">
+  </div>
+
+  <div class="item">
+    <img src="joaninha.jpg">
+  </div>
+
+  <div class="item">
+    <img src="worm.jpg">
+  </div>
+
+  <div class="item">
+    <img src="lagarta.jpg">
+  </div>
+</div>
+
+<style>
+/* Only affects this page's gallery */
+.gallery-portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.gallery-portfolio .item {
+  color: #FFF9A6;         
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.gallery-portfolio .item img {
+  width: 100%;
+  aspect-ratio: 4 / 4;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.gallery-portfolio .item h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #2BCBB8;
+}
+
+/* Back button above footer, left side */
+.back-btn-container {
+  text-align: left;
+  padding: 20px 40px;
+}
+
+.back-btn {
+  display: inline-block;
+  padding: 10px 25px;
+  background: #2BCBB8;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: 0.3s ease;
+  font-weight: 600;
+}
+
+.back-btn:hover {
+  background: #ff3ca6;
+  color: #fbffd2;
+}
+</style>
+
+<!-- BACK TO SITE BUTTON -->
+<div class="back-btn-container">
+  <a href="index.html" class="back-btn">← Voltar à página principal</a>
+</div>
+
+<!-- FOOTER (same as home page) -->
+<footer>
+  <div class="container">
+    <p>&copy; Alexia Peters, 2025</p>
+  </div>
+</footer>
+
+<!-- JS (same as home page) -->
+<script>
+let lastScroll = 0;
+const header = document.getElementById("main-header");
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.scrollY;
+
+  if(currentScroll > lastScroll && currentScroll > 50){
+    header.classList.add("shrink");
+  } else {
+    header.classList.remove("shrink");
+  }
+
+  lastScroll = currentScroll;
+});
+
+// Hamburger toggle
+const hamburger = document.querySelector('.hamburger');
+const menu = document.querySelector('.menu');
+
+hamburger.addEventListener('click', () => {
+  menu.classList.toggle('active');
+});
+
+// Mobile dropdown toggle
+const dropdowns = document.querySelectorAll('.menu ul li.dropdown > a');
+
+dropdowns.forEach(drop => {
+  drop.addEventListener('click', (e) => {
+    if(window.innerWidth <= 768 && menu.classList.contains('active')){
+      e.preventDefault();
+      drop.parentElement.classList.toggle('active');
+    }
+  });
+});
+
+// Close mobile menu on link click
+document.querySelectorAll('.menu a').forEach(link => {
+  link.addEventListener('click', () => {
+    if(window.innerWidth <= 768){
+      menu.classList.remove('active');
+      dropdowns.forEach(d => d.parentElement.classList.remove('active'));
+    }
+  });
+});
+</script>
+
 </body>
 </html>

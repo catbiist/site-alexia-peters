@@ -1,0 +1,5 @@
+.portfolio-subtext { 
+  color: #0f4c4c;            /* dark teal */
+  margin: 6px 0 0 40px;      /* aligns left with the title */
+  max-width: 30ch;           /* keeps the text shorter than title width */
+}

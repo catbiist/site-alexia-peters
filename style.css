@@ -23,12 +23,37 @@ header.shrink { padding: 10px 0; }
 }
 
 /* LOGO */
+.logo {
+  position: relative;
+  z-index: 100; /* very high so nothing overlaps */
+}
+
+.logo a {
+  display: inline-block;
+  cursor: pointer;
+}
+
 .logo img {
+  display: block;
   height: 55px;
   width: auto;
   transition: 0.3s ease;
 }
-header.shrink .logo img { height: 40px; }
+
+header.shrink .logo img { 
+  height: 40px; 
+}
+
+/* Make sure menu and hamburger don't cover logo */
+.menu, .hamburger {
+  position: relative; /* keep z-index default or lower than 100 */
+  z-index: 10;
+}
+
+
+
+
+
 
 /* MENU */
 .menu ul {
@@ -145,7 +170,7 @@ header.shrink .logo img { height: 40px; }
 /* HERO */
 .hero {
   height: 80vh;
-  background: #fffeec;
+  background: #fffff8;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -245,4 +270,3 @@ footer {
   .about-container { flex-direction: column; text-align: center; }
   .about-image img { max-width: 200px; }
 }
-

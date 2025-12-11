@@ -7,16 +7,116 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <style>
-/* Only contact section styling */
-.contact-hero { display:flex; justify-content:center; align-items:center; padding:80px 20px; background-color:#fefefe; }
-.contact-container { display:flex; flex-wrap:wrap; max-width:1200px; width:100%; gap:40px; align-items:center; }
-.contact-text { flex:1 1 400px; }
-.contact-title { font-family:'Poppins',sans-serif; font-size:2rem; font-weight:700; color:#ff3ca6; margin-bottom:10px; position:relative; display:inline-block; }
-.contact-title::after { content:""; position:absolute; left:0; bottom:-6px; width:100%; height:6px; background-color:#FFF9A6; border-radius:3px; }
-.contact-subtitle { font-family:'Poppins',sans-serif; font-size:1rem; color:#0f4c4c; margin:10px 0 20px 0; max-width:35ch; line-height:1.5; }
-.contact-links p { font-family:'Poppins',sans-serif; font-size:1rem; color:#222; margin:6px 0; }
-.contact-photo { flex:0 0 250px; display:flex; justify-content:center; align-items:center; }
-.contact-photo img { width:250px; height:250px; border-radius:50%; object-fit:cover; box-shadow:0 6px 15px rgba(0,0,0,0.1); }
+/* CONTACT HERO */
+.contact-hero {
+  display: flex;
+  justify-content: center;
+  padding: 80px 20px;
+  background-color: #fefefe;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: nowrap;        /* keep text and photo side by side */
+  align-items: flex-start;
+  gap: 60px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.contact-text {
+  flex: 1 1 0;
+  min-width: 0;             /* important to allow shrinking */
+}
+
+.contact-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ff3ca6;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.contact-title::after {
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-6px;
+  width:100%;
+  height:6px;
+  background-color:#FFF9A6;
+  border-radius:3px;
+}
+
+.contact-subtitle {
+  font-family:'Poppins',sans-serif;
+  font-size:1rem;
+  color:#0f4c4c;
+  margin:10px 0 20px 0;
+  line-height:1.5;
+}
+
+ul.contact-subtitle {
+  margin-left: 20px;
+}
+
+/* GOOGLE FORMS SECTION */
+.google-forms-section .shop-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2BCBB8;  
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.back-btn {
+  display: inline-block;
+  padding: 15px 35px;
+  background: #ff3ca6;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: 0.3s ease;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.back-btn:hover {
+  background: #2BCBB8;
+  color: #fffde8;
+}
+
+/* PHOTO */
+.contact-photo {
+  flex: 0 0 400px;       /* fixed width for photo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+  .contact-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .contact-photo {
+    margin-top: 20px;
+  }
+  .contact-photo img {
+    width: 250px;
+    height: 250px;
+  }
+}
 </style>
 </head>
 <body>
@@ -70,34 +170,37 @@
   </div>
 </header>
 
-
 <!-- CONTACT HERO -->
 <section class="contact-hero">
   <div class="contact-container">
     <div class="contact-text">
       <h2 class="contact-title">Pedidos de comissão</h2>
       <p class="contact-subtitle">
-  Esta secção é dedicada para comissões e futuras colaborações, quer que seja desenhos tradicionais a pedidos digitais.
-</p>
+        Esta secção é dedicada para comissões e futuras colaborações, quer que seja pedidos tradicionais ou digitais.
+      </p>
 
-<p class="contact-subtitle"><strong>IMPORTANTE:</strong></p>
-<ul class="contact-subtitle">
-  <li>Só serão aceites pedidos sérios;</li>
-  <li>Após o pedido ser aceite, será preciso um depósito de 50% do valor total;</li>
-  <li>Para pedidos de stickers, porta-chaves, tote bags e estojos, prints ou tatuagens 
-    temporárias preciso de pelo menos 2 SEMANAS de antecedência para tempo de produção.</li>
-  <li>Se não estiver 100% decidido, pode espreitar no meu Instagram ou enviar um e-mail para extra ajuda!</li>
-</ul>
+      <p class="contact-title"><strong>IMPORTANTE:</strong></p>
+      <ul class="contact-subtitle">
+        <li>Só serão aceites pedidos sérios;</li>
+        <li>Após o pedido ser aceite, será preciso um depósito de 50% do valor total;</li>
+        <li>Para pedidos de stickers, porta-chaves, tote bags e estojos, prints ou tatuagens temporárias preciso de pelo menos 2 SEMANAS de antecedência para tempo de produção.</li>
+        <li>Se não estiver 100% decidido, pode espreitar no meu Instagram ou enviar um e-mail para extra ajuda!</li>
+      </ul>
 
-<div class="google forms">
-    <p class="shop-title">GOOGLE FORMS!</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc3huarEoMMvETtVba6aeJEpLzYfQ5QBQT7TxlFW_9Q63DfVg/viewform" 
-    class="google-forms">Preencher formulário</a>
-  </div>
+      <div class="google-forms-section">
+        <p class="shop-title">GOOGLE FORMS! ↴ </p>
+        <div style="text-align: left; padding: 20px 40px;">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc3huarEoMMvETtVba6aeJEpLzYfQ5QBQT7TxlFW_9Q63DfVg/viewform" class="back-btn">
+            Preencher formulário!
+          </a>
+        </div>
+      </div>
     </div>
+
     <div class="contact-photo">
       <img src="media/alexia.peters.jpg" alt="Foto de Perfil">
     </div>
+
   </div>
 </section>
 

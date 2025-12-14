@@ -1,33 +1,3 @@
-/* SITE-WRAPPER SCALING NSEI COMOOOOO*/
-body {
-  overflow-x: hidden; 
-}
-
-.site-wrapper {
-  transform-origin: top left;
-  transform: scale(1);
-  width: 100vw;
-}
-
-@media (max-width: 1400px) {
-  .site-wrapper { transform: scale(0.95); }
-}
-
-@media (max-width: 1200px) {
-  .site-wrapper { transform: scale(0.9); }
-}
-
-@media (max-width: 992px) {
-  .site-wrapper { transform: scale(0.85); }
-}
-
-@media (max-width: 768px) {
-  .site-wrapper { transform: scale(0.8); }
-}
-
-@media (max-width: 480px) {
-  .site-wrapper { transform: scale(0.75); }
-}
 
 
 

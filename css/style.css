@@ -177,11 +177,11 @@ header.shrink .logo img {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 120px;
+  padding-top: 40px;
 }
 
 .hero h2 {
-  font-size: 3rem;
+  font-size: 6rem;
   color: #ff3ca6; /* pastel yellow */
   margin-bottom: 10px;
 }
@@ -227,6 +227,53 @@ header.shrink .logo img {
   background: #ff3ca6;
   color: #fffde8;
 }
+
+
+
+
+
+
+
+.carousel {
+  width: 90%;
+  overflow: hidden;
+  margin: 20px auto;
+}
+
+.group {
+  display: flex;
+  gap: 1em;
+  width: max-content;
+  animation: scroll 40s linear infinite;
+}
+
+.card {
+  flex: 0 0 200px;  
+  height: 140px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.card img {
+  width: 100%; 
+  height: 100%;      
+  object-fit: contain;  
+  display: block;    
+}
+
+
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-1280px); } 
+}
+
+
+
+
 
 /* ABOUT */
 #about { padding: 100px 20px; }

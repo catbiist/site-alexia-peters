@@ -3,3 +3,11 @@
   margin: 6px 0 0 40px;      /* aligns left with the title */
   max-width: 30ch;           /* keeps the text shorter than title width */
 }
+.item-text .item-text {
+  color: #0f4c4c;      /* same color */
+  margin: 8px 0 0 0;   /* NO left margin → aligns with image */
+  max-width: 30ch;     /* same width feel */
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;     /* same size */
+  line-height: 1.4;
+}

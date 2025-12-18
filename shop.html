@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LAPTOP MOCKUP LAB</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class=" site-wrapper"> 
+
+<!-- HEADER -->
+<header id="main-header">
+  <div class="header-inner">
+
+    <div class="logo">
+  <a href="index.html">
+    <img src="media/alexia.logo.png" alt="Logo">
+  </a>
+</div>
+
+
+    <nav class="menu">
+      <ul>
+        <li><a href="sobre.html">Sobre</a></li>
+
+        <li class="dropdown">
+          <a href="#">Portfolio</a>
+          <ul class="dropdown-menu">
+            <li><a href="portfolio-tradicional.html">Tradicional</a></li>
+            <li><a href="portfolio-digital.html">Digital</a></li>
+         
+            <li><a href="colaboracoes.html">Colaborações</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#">Serviços</a>
+          <ul class="dropdown-menu">
+            <li><a href="design.html">Design</a></li>
+            <li><a href="ilustracoes.html">Ilustrações</a></li>
+            <li><a href="stickers.html">Stickers, Prints,...</a></li>
+            <li><a href="desenho-tradicional.html">Desenho Tradicional</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#">Favoritos</a>
+          <ul class="dropdown-menu">
+            <li><a href="fav-tradicional.html">Tradicional</a></li>
+            <li><a href="fav-digital.html">Digital</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#">Contactos</a>
+          <ul class="dropdown-menu contactos-menu">
+            <li><a href="redes-sociais.html">Redes sociais</a></li>
+            <li><a href="google-forms.html">Google Forms</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Hamburger for mobile -->
+    <div class="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+
+  </div>
+</header>
+
+<main>
+  <div class="shop-unavailable">
+
+    <h1>☹ Loja Indisponível ☹</h1>
+    <p>
+      A loja online está temporariamente fechada enquanto preparo a nova coleção 
+    </p>
+    <p>(lança já em janeiro!) </p>
+      <p>Todos os pedidos feitos até 12 de Dezembro já foram enviados.</p>
+
+    <div class="shop-box">
+      <a href="index.html" class="back-btn">Voltar ao início</a>
+    </div>
+  </div>
+</main>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja Temporariamente Indisponível </title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* Make page fill screen so footer stays bottom */
+    html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  min-height: calc(100vh - 160px); /* header + footer height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: #fffff8;
+}
+
+
+    /* Match HERO typography */
+    .shop-unavailable h1 {
+      font-size: clamp(2rem, 6vw, 6rem);
+      color: #ff3ca6;
+      font-weight: 600;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    
+
+    .shop-unavailable {
+max-width: 520px;
+text-align: center;
+margin: 0 auto;
+}
+
+.shop-unavailable p {
+font-size: 1.2rem;
+color: #0f4c4c;
+margin: 0 auto 20px;
+}
+
+    .shop-box span {
+      display: block;
+      font-size: 0.9rem;
+      letter-spacing: 2px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: #2BCBB8;
+    }
+
+    .back-btn {
+      display: inline-block;
+      padding: 10px 25px;
+      background: #2BCBB8;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 50px;
+      transition: 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background: #ff3ca6;
+      color: #fffde8;
+    }
+  </style>
+</head>
+
+<footer>
+  <div class="container">
+    <p>&copy; Alexia Peters, 2025</p>
+  </div>
+</footer>
+
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const menu = document.querySelector('.menu');
+
+  hamburger.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>

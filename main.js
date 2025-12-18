@@ -10,11 +10,7 @@ let lastScroll = 0;
 if (header) {
   window.addEventListener("scroll", () => {
     const currentScroll = window.scrollY;
-    if (currentScroll > lastScroll && currentScroll > 50) {
-      header.classList.add("shrink");
-    } else {
-      header.classList.remove("shrink");
-    }
+    if (currentScroll > lastScroll && currentScroll > 50) 
     lastScroll = currentScroll;
   })
 }

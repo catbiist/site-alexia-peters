@@ -6,14 +6,7 @@ const dropdowns = document.querySelectorAll('.menu ul li.dropdown  a');
 
 let lastScroll = 0;
 
-// Header shrink on scroll
-if (header) {
-  window.addEventListener("scroll", () => {
-    const currentScroll = window.scrollY;
-    if (currentScroll > lastScroll && currentScroll > 50) 
-    lastScroll = currentScroll;
-  })
-}
+
 
 // Hamburger toggle
 if (hamburger && menu) {
